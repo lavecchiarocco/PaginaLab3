@@ -1,0 +1,55 @@
+:root{
+    --color-back:#0B080E;
+    --color-boton:#ebb31b;
+    --color-titule:#ffffff;
+    --color-texto:#a7a7a7;
+}
+
+body{
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+#reservas {
+    background-color: var(--color-back);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+form {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    
+}
+
+label{
+    margin-bottom: 8px;
+    color: var(--color-texto);
+    font-weight:bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: var(--font-body);
+    transition: border-color 0.3s ease;
+}
+

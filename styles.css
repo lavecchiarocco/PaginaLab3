@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --color-back: #0b080e;
+  --color-boton: #ebb31b;
+  --color-titule: #ffffff;
+  --color-texto: #a7a7a7;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-back);
+}
+
+header {
+  background-color: var(--color-back);
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--color-boton);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: var(--color-titule);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-titule);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-titule);
+}
+
+.hero {
+  background-image: url(/imagenes/inicio2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero-content {
+  background: linear-gradient(
+    90deg,
+    rgba(11, 8, 14, 1) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 0 8% 0 8%;
+  text-align: left;
+  height: 100%;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+.menu-preview {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: var(--color-back);
+}
+
+.menu-description {
+  flex: 1;
+  padding: 40px;
+}
+
+.menu-description h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.menu-description p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: var(--color-texto);
+}
+
+.menu-image {
+  flex: 1;
+  height: 400px;
+  overflow: hidden;
+}
+
+.sec-txt {
+  font-size: 1rem;
+  color: #423e46;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-btn {
+  background-color: var(--color-boton);
+  color: var(--color-back);
+  padding: 20px 25px;
+  text-decoration: none;
+  width: max-content;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #7d1919;
+}
+
+.section {
+  color: #a7a7a7;
+}
+
+footer {
+  background-color: var(--color-back);
+  color: #fff;
+  border-top: 2px solid #ebb31b;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 34px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info p{
+    color: var(--color-texto);
+}
+
+.horario p{
+    color: var(--color-texto);
+}
+
+.social a{
+    color: var(--color-boton);
+}
+
+
+
+@media (width <= 500px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+  .nav-links {
+    height: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-preview {
+    flex-direction: column;
+  }
+
+  .menu-description,
+  .menu-image {
+    width: 100%;
+  }
+
+  .menu-image {
+    height: 300px;
+  }
+
+  .hero {
+    background-image: url(/imagenes/inicio2.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .hero-content {
+    background: rgb(11, 8, 14);
+    background: linear-gradient(
+      180deg,
+      rgba(11, 8, 14, 0.5588235294117647) 7%,
+      rgba(11, 8, 14, 0.6666666666666667) 17%,
+      rgba(11, 8, 14, 0.8137254901960784) 27%,
+      rgba(11, 8, 14, 0.8799019607843137) 35%,
+      rgba(11, 8, 14, 1) 50%
+    );
+    width: 100%;
+    text-align: left;
+    height: 101%;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+}
+
+@media(width <= 570px){
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

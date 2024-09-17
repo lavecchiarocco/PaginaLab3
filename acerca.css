@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   
+
+#acerca{
+       background-color: var(--color-back);
+       padding: 30px;
+       border-radius: 12px;
+       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+       max-width: 600px;
+       margin: 0 auto;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+   
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+    font-size: 20px;
+}
+

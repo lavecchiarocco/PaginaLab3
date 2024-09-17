@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Lavecchia's</title>
+    <link rel="stylesheet" href="reserva.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Lavecchia's</a>
+            <div class="nav-links">
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="acerca.html">Acerca de</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reservas">
+            <h2>Haz tu Reserva</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Número de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="especial">Solicitudes especiales:</label>
+                    <textarea id="especial" name="especial"></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="cta-btn">Reservar</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lavecchia's Restaurante. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
