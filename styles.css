@@ -49,18 +49,19 @@ h2 {
 }
 
 .nav-links {
+    font-weight: bold;
   display: flex;
   gap: 20px;
 }
 
 .nav-links a {
-  text-decoration: none;
+  text-decoration:none;
   color: var(--color-titule);
 }
 
 .nav-links a:hover {
     transform: translateY(-3px);
-  }
+}
 
   .nav-links a::after {
     content: '';
@@ -206,6 +207,11 @@ footer {
     color: var(--color-boton);
 }
 
+.derechos{
+    text-align: center;
+  margin-top: 32px;
+  padding-top: 16px;
+}
 
 
 @media (width <= 500px) {
