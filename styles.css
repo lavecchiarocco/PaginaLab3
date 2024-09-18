@@ -168,11 +168,13 @@ h2 {
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 .cta-btn:hover {
   background-color: #7d1919;
 }
+
 
 .section {
   color: #a7a7a7;
